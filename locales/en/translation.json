@@ -1,5 +1,8 @@
 {
     "app":{
-        "title":"Books I Have"
+        "title":"Books I Have",
+        "buttons": {
+            "search": "Search"
+        }
     }
 }

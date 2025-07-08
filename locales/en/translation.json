@@ -4,6 +4,9 @@
         "buttons": {
             "search":"Search",
             "reset":"Reset"
+        },
+        "titles":{
+            "bookTitle":"Book Title"
         }
     }
 }

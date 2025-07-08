@@ -1,30 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { Button, Input, Layout } from '@ui-kitten/components';
-import { Divider, List, ListItem } from '@ui-kitten/components';
 import myData from '../data/data.json';
 
 
-const readJsonFile = async () => {
-
-};
-
 const ListOfBooks = () => {
-    console.log(myData);
-    useEffect(() => {
-        readJsonFile()
-    }, []);
-
     const { t, i18n } = useTranslation();
-    const [bookTitle, setBookTitle] = useState('');
+    const [bookSearchTitle, setBookSearchTitle] = useState('');
 
-    const renderItem = ({ item, index }) => (
-        <ListItem
-            title={`${item.bookName} ${index + 1}`}
-            description={`${item.author} ${index + 1}`}
-        />
-    );
+    const searchBook = () => {
+        if(bookSearchTitle.length > 0 ) {
+            const foundItem = myData.filter(item => {
+
+            });
+            console.log(foundItem);
+        }
+    };
 
     return (
         <Layout
@@ -35,31 +27,30 @@ const ListOfBooks = () => {
                 style={styles.container}
             >
                 <Input placeholder='Enter book title'
-                    value={bookTitle}
-                    onChangeText={nextValue => setBookTitle(nextValue)}
+                    value={bookSearchTitle}
+                    onChangeText={nextValue => setBookSearchTitle(nextValue)}
                 />
                 <Button
                     style={styles.button}
                     status='info'
+                    onPress={() => searchBook()}
                 >
                     {t('app.buttons.search').toUpperCase()}
                 </Button>
-                <Button 
-                    style={styles.button} 
+                <Button
+                    style={styles.button}
                     appearance='outline'
                     status='primary'
-                    onPress={()=> setBookTitle('')}
+                    onPress={() => setBookSearchTitle('')}
                 >
                     {t('app.buttons.reset').toUpperCase()}
                 </Button>
             </View>
             <View>
-                <List
-                    style={styles.listContainer}
-                    data={myData}
-                    ItemSeparatorComponent={Divider}
-                    renderItem={renderItem}
-                />
+                <Text>{t('app.titles.bookTitle').toUpperCase()}</Text>
+                {myData.map((item) => (
+                    <Text key={item.bookId}>{item.bookName}</Text>
+                ))}
             </View>
         </Layout>
     )

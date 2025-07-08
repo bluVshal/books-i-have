@@ -1,13 +1,52 @@
 [
     {
-        "bookId":"B01",
-        "bookName":"Crime and Punishment",
-        "author":"Fyodor Dostoievsky"
+        "bookId": "B01",
+        "bookName": "Crime and Punishment",
+        "author": "Fyodor Dostoievsky"
     },
     {
-        
-        "bookId":"B02",
-        "bookName":"Anna Karenina",
-        "author":"Fyodor Dostoievsky"
+        "bookId": "B02",
+        "bookName": "Anna Karenina",
+        "author": "Fyodor Dostoievsky"
+    },
+    {
+        "bookId": "B03",
+        "bookName": "Animal Farm",
+        "author": "George Orwell"
+    },
+    {
+        "bookId": "B04",
+        "bookName": "1984",
+        "author": "George Orwell"
+    },
+    {
+        "bookId": "B05",
+        "bookName": "Das Kapital",
+        "author": "Karl Marx"
+    },
+    {
+        "bookId": "B06",
+        "bookName": "The Plague",
+        "author": "Albert Camus"
+    },
+    {
+        "bookId": "B07",
+        "bookName": "Macbeth",
+        "author": "William Shakespeare"
+    },
+    {
+        "bookId": "B08",
+        "bookName": "Othello",
+        "author": "William Shakespeare"
+    },
+    {
+        "bookId": "B09",
+        "bookName": "Metamorphosis and Other Stories",
+        "author": "Franz Kafka"
+    },
+    {
+        "bookId": "B10",
+        "bookName": "Letters to Milena",
+        "author": "Franz Kafka"
     }
 ]

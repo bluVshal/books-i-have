@@ -5,7 +5,7 @@ import { Button, Input, Layout } from '@ui-kitten/components';
 import myData from '../data/data.json';
 
 
-const ListOfBooks = () => {
+const SearchDisplay = () => {
 
     useEffect(() => {
        searchBook();
@@ -59,12 +59,6 @@ const ListOfBooks = () => {
                 </Button>
             </View>
             <View>
-                <Text>{t('app.titles.bookTitle').toUpperCase()}</Text>
-                {myData.map((item) => (
-                    <Text key={item.bookId}>{item.bookName}</Text>
-                ))}
-            </View>
-            <View>
                 <FlatList
                     data={filteredBooks}
                     keyExtractor={(item) => item.bookId.toString()}
@@ -80,7 +74,7 @@ const ListOfBooks = () => {
     )
 }
 
-export default ListOfBooks;
+export default SearchDisplay;
 
 
 const styles = StyleSheet.create({

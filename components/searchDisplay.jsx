@@ -8,7 +8,7 @@ import myData from '../data/data.json';
 const SearchDisplay = () => {
 
     useEffect(() => {
-       searchBook();
+        searchBook();
     }, [bookSearchTitle]);
 
     const { t, i18n } = useTranslation();
@@ -19,7 +19,7 @@ const SearchDisplay = () => {
         const lowercasedSearchText = bookSearchTitle.toLowerCase();
         if (bookSearchTitle.length > 0) {
             const foundItem = myData.filter((item) => {
-               return item.bookName.toLowerCase().includes(lowercasedSearchText)
+                return item.bookName.toLowerCase().includes(lowercasedSearchText)
             });
             setFilteredBooks(foundItem);
         }
@@ -36,9 +36,10 @@ const SearchDisplay = () => {
             level='1'
         >
             <View
-                style={styles.container}
+                style={styles.controlContainer}
             >
                 <Input placeholder='Enter book title'
+                    style={styles.inputBox}
                     value={bookSearchTitle}
                     onChangeText={nextValue => setBookSearchTitle(nextValue)}
                 />
@@ -58,7 +59,9 @@ const SearchDisplay = () => {
                     {t('app.buttons.reset').toUpperCase()}
                 </Button>
             </View>
-            <View>
+            <View
+                style={styles.listContainer}
+            >
                 <FlatList
                     data={filteredBooks}
                     keyExtractor={(item) => item.bookId.toString()}
@@ -82,6 +85,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
     },
+    inputBox: {
+        marginTop: 2.5,
+        width: '40%'
+    },
     bookItem: {
         padding: 10,
         borderBottomWidth: 1,
@@ -91,13 +98,18 @@ const styles = StyleSheet.create({
         margin: 2,
     },
     controlContainer: {
-        borderRadius: 4,
-        margin: 2,
-        padding: 6,
+        display: 'flex',
+        flexDirection: 'row',
+        width: "100%",
         justifyContent: 'center',
-        backgroundColor: '#3366FF',
+        backgroundColor: "#FAFAFA",
+        marginTop: 13,
+        marginLeft: -15,
     },
     listContainer: {
-        maxHeight: 200,
+        height: 400,
+        width: "86%",
+        backgroundColor: "#FAFAFA",
+        margin: "5%"
     }
 });

@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.vjb.BooksIHave"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -30,6 +31,11 @@
             "@ui-kitten/components"
           ]
         }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "832f938c-e663-4ed7-be93-5648b6e83741"
       }
     }
   }

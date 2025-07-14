@@ -38,7 +38,7 @@ const SearchDisplay = () => {
             <View
                 style={styles.controlContainer}
             >
-                <Input placeholder='Enter book title'
+                <Input placeholder='Enter book title:'
                     style={styles.inputBox}
                     value={bookSearchTitle}
                     onChangeText={nextValue => setBookSearchTitle(nextValue)}
@@ -62,6 +62,7 @@ const SearchDisplay = () => {
                     <Icon.Button
                         name="remove"
                         backgroundColor="#3b5998"
+                        width="70%"
                         onPress={() => resetAll()}
                     >
                     </Icon.Button>
@@ -94,8 +95,8 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
     },
     inputBox: {
-        marginTop: 2.5,
-        width: '40%'
+        marginTop: 15,
+        width: '50%'
     },
     bookItem: {
         padding: 10,
@@ -104,6 +105,8 @@ const styles = StyleSheet.create({
     },
     button: {
         margin: 2,
+        alignItems: "center",
+        justifyContent: "center"
     },
     controlContainer: {
         display: 'flex',
@@ -112,7 +115,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: "#FAFAFA",
         marginTop: 13,
-        marginLeft: -15,
+        marginLeft: -1,
     },
     listContainer: {
         height: 400,

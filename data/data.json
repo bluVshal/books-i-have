@@ -61,52 +61,387 @@
     },
     {
         "bookId": "B13",
-        "bookName": "",
-        "author": ""
+        "bookName": "The Republic",
+        "author": "Plato"
     },
     {
         "bookId": "B14",
-        "bookName": "",
-        "author": ""
+        "bookName": "Mein Kampf",
+        "author": "Adolf Hitler"
     },
     {
         "bookId": "B15",
-        "bookName": "",
-        "author": ""
+        "bookName": "From Russia, with love",
+        "author": "Ian Fleming"
     },
     {
         "bookId": "B16",
-        "bookName": "",
-        "author": ""
+        "bookName": "Casino Royale",
+        "author": "Ian Fleming"
     },
     {
         "bookId": "B17",
-        "bookName": "",
-        "author": ""
+        "bookName": "Far Cry",
+        "author": "John Harvey"
     },
     {
         "bookId": "B18",
-        "bookName": "",
-        "author": ""
+        "bookName": "The Road to Omaha",
+        "author": "Robert Ludlum"
     },
     {
         "bookId": "B19",
-        "bookName": "",
-        "author": ""
+        "bookName": "Long Time Coming",
+        "author": "Robert Goddard"
     },
     {
         "bookId": "B20",
-        "bookName": "",
-        "author": ""
+        "bookName": "Notes from the underground",
+        "author": "Fyodor Dostoievsky"
     },
     {
         "bookId": "B21",
-        "bookName": "",
-        "author": ""
+        "bookName": "Fragements et Amphorismes",
+        "author": "Frederich Nietzsche"
     },
     {
         "bookId": "B22",
-        "bookName": "",
-        "author": ""
+        "bookName": "The Communist Manifesto",
+        "author": "Karl Marx"
+    },
+    {
+        "bookId": "B23",
+        "bookName": "The Subtle Art of not giving a fnck",
+        "author": "Mark Manson"
+    },
+    {
+        "bookId": "B24",
+        "bookName": "Everything is fncked",
+        "author": "Mark M"
+    },
+    {
+        "bookId": "B25",
+        "bookName": "Heat 2",
+        "author": "Michael Mann"
+    },
+    {
+        "bookId": "B26",
+        "bookName": "The Interpretations of Dreams",
+        "author": "Sigmund Freud"
+    },
+    {
+        "bookId": "B27",
+        "bookName": "The 50th Law",
+        "author": "Robert Greene"
+    },
+    {
+        "bookId": "B28",
+        "bookName": "Thus Spoke Zarathustra",
+        "author": "Frederich Nietzsche"
+    },
+    {
+        "bookId": "B30",
+        "bookName": "Adolf Hitler: A Biography",
+        "author": "Adolf Hitler"
+    },
+    {
+        "bookId": "B31",
+        "bookName": "The Sum of All Fears",
+        "author": "Tom Clancy"
+    },
+    {
+        "bookId": "B32",
+        "bookName": "Needful Things",
+        "author": "Stephen King"
+    },
+    {
+        "bookId": "B33",
+        "bookName": "The Complete Stories",
+        "author": "Franz Kafka"
+    },
+    {
+        "bookId": "B34",
+        "bookName": "The Handmaid's Tale",
+        "author": "Margaret Atwood"
+    },
+    {
+        "bookId": "B35",
+        "bookName": "The Razor's Edge",
+        "author": "Somerset Maugham"
+    },
+    {
+        "bookId": "B36",
+        "bookName": "The Catcher in the Rye",
+        "author": "JD Salinger"
+    },
+    {
+        "bookId": "B37",
+        "bookName": "Infinite Game",
+        "author": "Simon Sinek"
+    },
+    {
+        "bookId": "B38",
+        "bookName": "La Peste",
+        "author": "Albert Camus"
+    },
+    {
+        "bookId": "B39",
+        "bookName": "La Chute",
+        "author": "Albert Camus"
+    },
+    {
+        "bookId": "B40",
+        "bookName": "American Psycho",
+        "author": "Bret Easton Ellis"
+    },
+    {
+        "bookId": "B41",
+        "bookName": "The Daily Dad",
+        "author": "Ryan Holiday"
+    },
+    {
+        "bookId": "B42",
+        "bookName": "Killers of the flower moon",
+        "author": "David Grann"
+    },
+    {
+        "bookId": "B43",
+        "bookName": "The Pianist",
+        "author": "Wladyslaw Szpilman"
+    },
+    {
+        "bookId": "B44",
+        "bookName": "Start With Why",
+        "author": "Simon Sinek"
+    },
+    {
+        "bookId": "B45",
+        "bookName": "Chernobyl",
+        "author": "Serhii Plokhy"
+    },
+    {
+        "bookId": "B46",
+        "bookName": "Hamlet",
+        "author": "William Shakespeare"
+    },
+    {
+        "bookId": "B47",
+        "bookName": "White Nights",
+        "author": "Fyodor Dostoievsky"
+    },
+    {
+        "bookId": "B48",
+        "bookName": "Zodiac",
+        "author": "Robert Graysmith"
+    },
+    {
+        "bookId": "B49",
+        "bookName": "The Prophet",
+        "author": "Khalil Ghibran"
+    },
+    {
+        "bookId": "B50",
+        "bookName": "La nef des fous",
+        "author": "Michael Onfray"
+    },
+    {
+        "bookId": "B51",
+        "bookName": "The Iliad",
+        "author": "Homer"
+    },
+    {
+        "bookId": "B52",
+        "bookName": "The Odyssey",
+        "author": "Homer"
+    },
+    {
+        "bookId": "B53",
+        "bookName": "Letters from a stoic",
+        "author": "Seneca"
+    },
+    {
+        "bookId": "B54",
+        "bookName": "The Godfather",
+        "author": "Mario Puzo"
+    },
+    {
+        "bookId": "B55",
+        "bookName": "The Double",
+        "author": "Fyodor Dostoievsky"
+    },
+    {
+        "bookId": "B56",
+        "bookName": "Never Split the Difference",
+        "author": "Chris Voss"
+    },
+    {
+        "bookId": "B57",
+        "bookName": "The Fountainhead",
+        "author": "Ayn Rand"
+    },
+    {
+        "bookId": "B58",
+        "bookName": "The Myth of Normal",
+        "author": "Gabor Maté"
+    },
+    {
+        "bookId": "B59",
+        "bookName": "Discipline is Destiny",
+        "author": "Ryan Holiday"
+    },
+    {
+        "bookId": "B60",
+        "bookName": "Tao te ching",
+        "author": "Lao Tzu"
+    },
+    {
+        "bookId": "B61",
+        "bookName": "The Castle",
+        "author": "Franz Kafka"
+    },
+    {
+        "bookId": "B62",
+        "bookName": "11 22 63",
+        "author": "Stephen King"
+    },
+    {
+        "bookId": "B63",
+        "bookName": "The Art of War",
+        "author": "Sun Tzu"
+    },
+    {
+        "bookId": "B64",
+        "bookName": "Le Palimpseste d'Archimède",
+        "author": "Elliette Abecassis"
+    },
+    {
+        "bookId": "B65",
+        "bookName": "Eyes of Darkness",
+        "author": "Dean Koontz"
+    },
+    {
+        "bookId": "B66",
+        "bookName": "War and Peace",
+        "author": "Leo Tolstoy"
+    },
+    {
+        "bookId": "B67",
+        "bookName": "Crime et Châtiment",
+        "author": "Fyodor Dostoievsky"
+    },
+    {
+        "bookId": "B68",
+        "bookName": "Madame Bovary",
+        "author": "Gustave Flaubert"
+    },
+    {
+        "bookId": "B69",
+        "bookName": "Nineteen Eighty-Four",
+        "author": "George Orwell"
+    },
+    {
+        "bookId": "B70",
+        "bookName": "The Quick and Easy Way to Effective Speaking",
+        "author": "Dale Carnegie"
+    },
+    {
+        "bookId": "B71",
+        "bookName": "Beyond Good and Evil",
+        "author": "Frederich Nietzsche"
+    },
+    {
+        "bookId": "B72",
+        "bookName": "The Brothers Karamazov",
+        "author": "Fyodor Dostoievsky"
+    },
+    {
+        "bookId": "B73",
+        "bookName": "The Idiot",
+        "author": "Fyodor Dostoievsky"
+    },
+    {
+        "bookId": "B74",
+        "bookName": "L'Enfant, La Taupe, Le Renard et le Cheval",
+        "author": "Charlie Mackesy"
+    },
+    {
+        "bookId": "B75",
+        "bookName": "How to Stop Worrying and start living",
+        "author": "Dale Carnegie"
+    },
+    {
+        "bookId": "B76",
+        "bookName": "En attendant demain",
+        "author": "Natacha Appana"
+    },
+    {
+        "bookId": "B77",
+        "bookName": "Tropique de la violence",
+        "author": "Natacha Appana"
+    },
+    {
+        "bookId": "B78",
+        "bookName": "A tale of two cities",
+        "author": "Charles Dickens"
+    },
+    {
+        "bookId": "B79",
+        "bookName": "Courage is calling",
+        "author": "Ryan Holiday"
+    },
+    {
+        "bookId": "B80",
+        "bookName": "Conspiracy",
+        "author": "Ryan Holiday"
+    },
+    {
+        "bookId": "B81",
+        "bookName": "Ego is the enemy",
+        "author": "Ryan Holiday"
+    },
+    {
+        "bookId": "B82",
+        "bookName": "The Daily Law",
+        "author": "Robert Greene"
+    },
+    {
+        "bookId": "B83",
+        "bookName": "The Daily Law",
+        "author": "Robert Greene"
+    },
+    {
+        "bookId": "B84",
+        "bookName": "The 33 Strategies of War",
+        "author": "Robert Greene"
+    },
+    {
+        "bookId": "B85",
+        "bookName": "48 Laws of Power",
+        "author": "Robert Greene"
+    },
+    {
+        "bookId": "B86",
+        "bookName": "The Laws of Human Nature",
+        "author": "Robert Greene"
+    },
+    {
+        "bookId": "B87",
+        "bookName": "Mastery",
+        "author": "Robert Greene"
+    },
+    {
+        "bookId": "B88",
+        "bookName": "Cash Flow Quadrant",
+        "author": "Robert Kiyosaki"
+    },
+    {
+        "bookId": "B89",
+        "bookName": "Rich Dad Poor Dad",
+        "author": "Robert Kiyosaki"
+    },
+    {
+        "bookId": "B90",
+        "bookName": "The English Patient",
+        "author": "Michael Oondatje"
     }
 ]

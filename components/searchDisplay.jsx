@@ -3,7 +3,7 @@ import { FlatList, Text, View, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { Button, Input, Layout } from '@ui-kitten/components';
 import myData from '../data/data.json';
-
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const SearchDisplay = () => {
 
@@ -46,17 +46,25 @@ const SearchDisplay = () => {
                 <Button
                     style={styles.button}
                     status='info'
-                    onPress={() => searchBook()}
                 >
-                    {t('app.buttons.search').toUpperCase()}
+                    <Icon.Button
+                        name="search"
+                        backgroundColor="#3b5998"
+                        onPress={() => searchBook()}
+                    >
+                    </Icon.Button>
                 </Button>
                 <Button
                     style={styles.button}
                     appearance='outline'
                     status='primary'
-                    onPress={() => resetAll()}
                 >
-                    {t('app.buttons.reset').toUpperCase()}
+                    <Icon.Button
+                        name="remove"
+                        backgroundColor="#3b5998"
+                        onPress={() => resetAll()}
+                    >
+                    </Icon.Button>
                 </Button>
             </View>
             <View

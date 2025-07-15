@@ -6,7 +6,11 @@
             "reset":"Reset"
         },
         "titles":{
-            "bookTitle":"Book Title"
+            "bookTitle":"Book Title",
+            "error":"Error"
+        },
+        "messages":{
+            "emptyTextError":"Enter a text to search"
         }
     }
 }

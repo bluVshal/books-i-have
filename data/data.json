@@ -443,5 +443,15 @@
         "bookId": "B90",
         "bookName": "The English Patient",
         "author": "Michael Oondatje"
+    },
+    {
+        "bookId": "B91",
+        "bookName": "The Prince",
+        "author": "Niccolo Machiavelli"
+    },
+    {
+        "bookId": "B92",
+        "bookName": "How to Win Friends and Influence People",
+        "author": "Dale Carnegie"
     }
 ]

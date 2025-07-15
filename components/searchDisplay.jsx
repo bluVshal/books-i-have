@@ -43,6 +43,8 @@ const SearchDisplay = () => {
             const foundItem = myData.filter((item) => {
                 return item.author.toLowerCase().includes(lowercasedSearchText)
             });
+            console.log(typeof foundItem)
+            if(foundItem)
             setFilteredBooks(foundItem);
         }
     };
@@ -75,43 +77,43 @@ const SearchDisplay = () => {
             <View
                 style={styles.controlContainer}
             >
-                <View>
-                    <Input placeholder='Enter Book Title:'
+                <View
+                    style={styles.txtContainer}
+                >
+                    <Input placeholder='Book Title'
                         style={styles.inputBox}
                         value={bookSearchTitle}
                         onChangeText={nextValue => setBookSearchTitle(nextValue)}
                     />
-                    <Input placeholder='Enter Author:'
+                    <Input placeholder='Author'
                         style={styles.inputBox}
                         value={bookSearchAuthor}
                         onChangeText={nextValue => setBookSearchAuthor(nextValue)}
                     />
                 </View>
-                <View>
-                    <Button
+                <View
+                    style={styles.btnContainer}
+                >
+
+                    <Icon.Button
                         style={styles.button}
-                        status='info'
+                        name="search"
+                        backgroundColor="#5D5A59"
+                        color="#FFFFF0"
+                        onPress={() => searchPressed()}
                     >
-                        <Icon.Button
-                            name="search"
-                            backgroundColor="#3b5998"
-                            onPress={() => searchPressed()}
-                        >
-                        </Icon.Button>
-                    </Button>
-                    <Button
+                    </Icon.Button>
+
+                    <View style={{ width: 10 }} />
+
+                    <Icon.Button
                         style={styles.button}
-                        appearance='outline'
-                        status='primary'
+                        name="remove"
+                        backgroundColor="#3b5998"
+                        onPress={() => resetAll()}
                     >
-                        <Icon.Button
-                            name="remove"
-                            backgroundColor="#3b5998"
-                            width="70%"
-                            onPress={() => resetAll()}
-                        >
-                        </Icon.Button>
-                    </Button>
+                    </Icon.Button>
+
                 </View>
             </View>
             <View
@@ -142,6 +144,7 @@ const styles = StyleSheet.create({
     },
     inputBox: {
         marginTop: 15,
+        marginLeft: 12,
         width: '50%'
     },
     bookItem: {
@@ -150,13 +153,12 @@ const styles = StyleSheet.create({
         borderBottomColor: '#ccc',
     },
     button: {
-        margin: 2,
-        alignItems: "center",
-        justifyContent: "center"
+        marginLeft: 10,
+        marginBottom: 5,
     },
     controlContainer: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         width: "100%",
         justifyContent: 'center',
         backgroundColor: "#FAFAFA",
@@ -168,5 +170,15 @@ const styles = StyleSheet.create({
         width: "86%",
         backgroundColor: "#FAFAFA",
         margin: "5%"
+    },
+    txtContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        width: '90%',
+        marginBottom: '7%',
+    },
+    btnContainer: {
+        flexDirection: 'row', // Arrange buttons horizontally
+        marginLeft: 13
     }
 });

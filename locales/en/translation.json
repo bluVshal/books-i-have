@@ -10,7 +10,8 @@
             "error":"Error"
         },
         "messages":{
-            "emptyTextError":"Enter a text to search"
+            "emptyTextError":"Enter a text to search",
+            "emptyListError":"No Books In List"
         }
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Alert, FlatList, Text, View, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { Button, Input, Layout } from '@ui-kitten/components';
+import { Input, Layout } from '@ui-kitten/components';
 import myData from '../data/data.json';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
         marginBottom: '7%',
     },
     btnContainer: {
-        flexDirection: 'row', // Arrange buttons horizontally
+        flexDirection: 'row',
         marginLeft: 13
     }
 });

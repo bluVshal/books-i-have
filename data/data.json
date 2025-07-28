@@ -453,5 +453,20 @@
         "bookId": "B92",
         "bookName": "How to Win Friends and Influence People",
         "author": "Dale Carnegie"
+    },
+    {
+        "bookId": "B93",
+        "bookName": "L'Adversaire",
+        "author": "Emmanuel Carrère"
+    },
+    {
+        "bookId": "B94",
+        "bookName": "Meditations",
+        "author": "Marcus Aurelius"
+    },
+    {
+        "bookId": "B95",
+        "bookName": "Les mots",
+        "author": "Jean-Paul Sartre"
     }
 ]

@@ -3,10 +3,9 @@ import { StyleSheet, View } from 'react-native';
 import * as eva from '@eva-design/eva';
 import { Layout, Text } from '@ui-kitten/components';
 import SearchDisplay from './searchDisplay';
-import BookEntry from './bookEntry';
 
 
-const Home = () => {
+const BookEntry = () => {
     const { t, i18n } = useTranslation();
 
     return (
@@ -14,13 +13,12 @@ const Home = () => {
             <Text category='h1'>{t('app.title')}</Text>
             <View style={styles.listContainer}>
                 <SearchDisplay />
-                <BookEntry />
             </View>
         </Layout>
     )
 }
 
-export default Home;
+export default BookEntry;
 
 const styles = StyleSheet.create({
     listContainer : {

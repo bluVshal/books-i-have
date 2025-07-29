@@ -140,69 +140,74 @@
         "author": "Frederich Nietzsche"
     },
     {
-        "bookId": "B30",
+        "bookId": "B29",
         "bookName": "Adolf Hitler: A Biography",
         "author": "Adolf Hitler"
     },
     {
-        "bookId": "B31",
+        "bookId": "B30",
         "bookName": "The Sum of All Fears",
         "author": "Tom Clancy"
     },
     {
-        "bookId": "B32",
+        "bookId": "B31",
         "bookName": "Needful Things",
         "author": "Stephen King"
     },
     {
-        "bookId": "B33",
+        "bookId": "B32",
         "bookName": "The Complete Stories",
         "author": "Franz Kafka"
     },
     {
-        "bookId": "B34",
+        "bookId": "B33",
         "bookName": "The Handmaid's Tale",
         "author": "Margaret Atwood"
     },
     {
-        "bookId": "B35",
+        "bookId": "B34",
         "bookName": "The Razor's Edge",
         "author": "Somerset Maugham"
     },
     {
-        "bookId": "B36",
+        "bookId": "B35",
         "bookName": "The Catcher in the Rye",
         "author": "JD Salinger"
     },
     {
-        "bookId": "B37",
+        "bookId": "B36",
         "bookName": "Infinite Game",
         "author": "Simon Sinek"
     },
     {
-        "bookId": "B38",
+        "bookId": "B37",
         "bookName": "La Peste",
         "author": "Albert Camus"
     },
     {
-        "bookId": "B39",
+        "bookId": "B38",
         "bookName": "La Chute",
         "author": "Albert Camus"
     },
     {
-        "bookId": "B40",
+        "bookId": "B39",
         "bookName": "American Psycho",
         "author": "Bret Easton Ellis"
     },
     {
-        "bookId": "B41",
+        "bookId": "B40",
         "bookName": "The Daily Dad",
         "author": "Ryan Holiday"
     },
     {
-        "bookId": "B42",
+        "bookId": "B41",
         "bookName": "Killers of the flower moon",
         "author": "David Grann"
+    },
+    {
+        "bookId": "B42",
+        "bookName": "Les mots",
+        "author": "Jean-Paul Sartre"
     },
     {
         "bookId": "B43",
@@ -463,10 +468,5 @@
         "bookId": "B94",
         "bookName": "Meditations",
         "author": "Marcus Aurelius"
-    },
-    {
-        "bookId": "B95",
-        "bookName": "Les mots",
-        "author": "Jean-Paul Sartre"
     }
 ]

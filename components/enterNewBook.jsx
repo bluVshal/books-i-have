@@ -8,42 +8,62 @@ import Icon from 'react-native-vector-icons/dist/FontAwesome';
 const EnterNewBook = () => {
 
     const { t, i18n } = useTranslation();
-    const [bookSearchTitle, setBookSearchTitle] = useState('');
-    const [bookSearchAuthor, setBookSearchAuthor] = useState('');
+    const [bookName, setBookName] = useState('');
+    const [bookAuthor, setBookAuthor] = useState('');
+    const [bookId, setBookId] = useState('');
 
     const enterPressed = () => {
+        checkText();
         searchIfExists();
     };
 
+    const checkText = () => {
+        if (bookName.length === 0) {
+            showAlert(t('app.messages.emptyInputTextError'));
+        }
+    };
+
     const searchIfExists = () => {
-         const lowercasedSearchText = bookSearchTitle.toLowerCase();
-        if (bookSearchTitle.length > 0) {
+        const lowercasedSearchText = bookName.toLowerCase();
+        if (bookName.length > 0) {
             const foundItem = myData.filter((item) => {
                 return item.bookName.toLowerCase().includes(lowercasedSearchText)
             });
-            if(Object.keys(foundItem).length > 0){
+            if (Object.keys(foundItem).length > 0) {
                 showAlert(t('app.messages.bookAlreadyExistsError'))
+            }
+            else if (bookAuthor.length > 0) {
+                insertInJson();
+            }
+            else{
+                showAlert(t('app.messages.bookAuthorMissingError'));
             }
         }
     };
 
-     const showAlert = (errMsg) => {
-            Alert.alert(
-                t('app.titles.error'),
-                errMsg,
-                [
-                    {
-                        text: "OK",
-                        style: "cancel"
-                    }
-                ],
-                { cancelable: true }
-            );
-        };
+    const insertInJson = () => {
+        const lastIndex = myData.map(item => item.bookId).lastIndexOf("B" + (myData.length).toString());
+        console.log(typeof lastIndex);
+        myData.push({ bookId: "B" + (lastIndex + 1).toString(), bookName: bookName, bookAuthor: bookAuthor });
+    };
+
+    const showAlert = (errMsg) => {
+        Alert.alert(
+            t('app.titles.error'),
+            errMsg,
+            [
+                {
+                    text: "OK",
+                    style: "cancel"
+                }
+            ],
+            { cancelable: true }
+        );
+    };
 
     const resetAll = () => {
-        setBookSearchTitle('');
-        setBookSearchAuthor('');
+        setBookName('');
+        setBookAuthor('');
     };
 
     return (
@@ -51,6 +71,7 @@ const EnterNewBook = () => {
             style={styles.container}
             level='1'
         >
+            <Text category='h5'>{t('app.titles.bookEntry')}</Text>
             <View
                 style={styles.controlContainer}
             >
@@ -59,23 +80,23 @@ const EnterNewBook = () => {
                 >
                     <Input placeholder='Book Title'
                         style={styles.inputBox}
-                        value={bookSearchTitle}
-                        onChangeText={nextValue => setBookSearchTitle(nextValue)}
+                        value={bookName}
+                        onChangeText={nextValue => setBookName(nextValue)}
                     />
                     <Input placeholder='Author'
                         style={styles.inputBox}
-                        value={bookSearchAuthor}
-                        onChangeText={nextValue => setBookSearchAuthor(nextValue)}
+                        value={bookAuthor}
+                        onChangeText={nextValue => setBookAuthor(nextValue)}
                     />
                 </View>
                 <View
                     style={styles.btnContainer}
                 >
+
                     <Icon.Button
                         style={styles.button}
                         name="search"
                         backgroundColor="#5D5A59"
-                        color="#FFFFF0"
                         onPress={() => enterPressed()}
                     >
                     </Icon.Button>
@@ -102,7 +123,7 @@ export default EnterNewBook;
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        flexWrap: 'wrap',        
+        flexWrap: 'wrap',
         backgroundColor: "#758F8A"
     },
     inputBox: {
@@ -120,10 +141,10 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         width: "86%",
-        justifyContent: 'center',        
+        justifyContent: 'center',
         backgroundColor: "#8CA29E",
         margin: "5%",
-        marginLeft:'6.5%',
+        marginLeft: '6.5%',
         borderWidth: 1,
         borderRadius: 20,
     },

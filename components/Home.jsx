@@ -13,9 +13,7 @@ const Home = () => {
         <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <Text category='h3'>{t('app.title')}</Text>
             <View style={styles.listContainer}>
-                <Text category='h5'>{t('app.titles.bookEntry')}</Text>
                 <BookEntry />
-                <Text category='h5'>{t('app.titles.bookSearch')}</Text>
                 <SearchDisplay />
             </View>
         </Layout>

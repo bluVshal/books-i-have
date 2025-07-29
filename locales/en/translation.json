@@ -8,14 +8,15 @@
         "titles":{
             "bookTitle":"Book Title",
             "error":"Error",
-            "bookEntry":"Book Entry",
+            "bookEntry":"New Book Entry",
             "bookSearch":"Book Search"
         },
         "messages":{
             "emptyTextError":"Enter a text to search",
             "emptyListError":"No Books In List",
             "bookAlreadyExistsError":"Book Already Exists",
-            "emptyInputTextError":"Enter a text to input"
+            "emptyInputTextError":"Enter a text to input",
+            "bookAuthorMissingError":"Enter Author Name"
         }
     }
 }

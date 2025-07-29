@@ -73,6 +73,7 @@ const SearchDisplay = () => {
             style={styles.container}
             level='1'
         >
+            <Text category='h5'>{t('app.titles.bookSearch')}</Text>
             <View
                 style={styles.controlContainer}
             >
@@ -98,7 +99,6 @@ const SearchDisplay = () => {
                         style={styles.button}
                         name="search"
                         backgroundColor="#5D5A59"
-                        color="#FFFFF0"
                         onPress={() => searchPressed()}
                     >
                     </Icon.Button>
@@ -139,7 +139,7 @@ export default SearchDisplay;
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        flexWrap: 'wrap',        
+        flexWrap: 'wrap',
         backgroundColor: "#78909C"
     },
     inputBox: {
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: "#90A4AE",
         margin: "5%",
-        marginLeft:'6.5%',
+        marginLeft: '6.5%',
         borderWidth: 1,
         borderRadius: 20,
     },
@@ -175,8 +175,8 @@ const styles = StyleSheet.create({
         height: 210,
         width: "86%",
         backgroundColor: "#B0BEC5",
-        margin: "5%",        
-        marginLeft:'6.5%',
+        margin: "5%",
+        marginLeft: '6.5%',
         overflow: "false",
     },
     txtContainer: {

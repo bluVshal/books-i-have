@@ -10,7 +10,6 @@ const EnterNewBook = () => {
     const { t, i18n } = useTranslation();
     const [bookName, setBookName] = useState('');
     const [bookAuthor, setBookAuthor] = useState('');
-    const [bookId, setBookId] = useState('');
 
     const enterPressed = () => {
         checkText();

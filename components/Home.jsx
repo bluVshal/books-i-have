@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
-import * as eva from '@eva-design/eva';
 import { Layout, Text } from '@ui-kitten/components';
 import SearchDisplay from './searchDisplay';
 import BookEntry from './bookEntry';

@@ -21,7 +21,7 @@ const EnterNewBook = () => {
             const foundItem = myData.filter((item) => {
                 return item.bookName.toLowerCase().includes(lowercasedSearchText)
             });
-            if(Object.keys(foundItem).length === 0){
+            if(Object.keys(foundItem).length > 0){
                 showAlert(t('app.messages.bookAlreadyExistsError'))
             }
         }
@@ -44,7 +44,6 @@ const EnterNewBook = () => {
     const resetAll = () => {
         setBookSearchTitle('');
         setBookSearchAuthor('');
-
     };
 
     return (
@@ -72,7 +71,6 @@ const EnterNewBook = () => {
                 <View
                     style={styles.btnContainer}
                 >
-
                     <Icon.Button
                         style={styles.button}
                         name="search"
@@ -104,45 +102,40 @@ export default EnterNewBook;
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        flexWrap: 'wrap',
+        flexWrap: 'wrap',        
+        backgroundColor: "#758F8A"
     },
     inputBox: {
         marginTop: 15,
         marginLeft: 12,
         width: '50%'
     },
-    bookItem: {
-        padding: 10,
-        borderBottomWidth: 1,
-        borderBottomColor: '#ccc',
-    },
     button: {
         marginLeft: 10,
         marginBottom: 5,
+        width: 50,
+        height: 50
     },
     controlContainer: {
         display: 'flex',
         flexDirection: 'column',
-        width: "100%",
-        justifyContent: 'center',
-        backgroundColor: "#FAFAFA",
-        marginTop: 13,
-        marginLeft: -1,
-    },
-    listContainer: {
-        height: 400,
         width: "86%",
-        backgroundColor: "#FAFAFA",
-        margin: "5%"
+        justifyContent: 'center',        
+        backgroundColor: "#8CA29E",
+        margin: "5%",
+        marginLeft:'6.5%',
+        borderWidth: 1,
+        borderRadius: 20,
     },
     txtContainer: {
         display: 'flex',
         flexDirection: 'row',
         width: '90%',
-        marginBottom: '7%',
+        marginBottom: '10%',
     },
     btnContainer: {
         flexDirection: 'row',
-        marginLeft: 13
+        marginLeft: 13,
+        marginBottom: 10
     }
 });

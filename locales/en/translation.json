@@ -8,7 +8,8 @@
         "titles":{
             "bookTitle":"Book Title",
             "error":"Error",
-            "bookEntry":"Book Entry"
+            "bookEntry":"Book Entry",
+            "bookSearch":"Book Search"
         },
         "messages":{
             "emptyTextError":"Enter a text to search",

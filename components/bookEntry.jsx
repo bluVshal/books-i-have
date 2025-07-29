@@ -8,19 +8,10 @@ const BookEntry = () => {
     const { t, i18n } = useTranslation();
 
     return (
-        <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text category='h1'>{t('app.bookEntry')}</Text>
-            <View style={styles.listContainer}>
-                <EnterNewBook />
-            </View>
-        </Layout>
+        <View>
+            <EnterNewBook />
+        </View>
     )
 }
 
 export default BookEntry;
-
-const styles = StyleSheet.create({
-    listContainer : {
-       margin : 10
-    }
-});

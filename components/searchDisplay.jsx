@@ -43,9 +43,8 @@ const SearchDisplay = () => {
             const foundItem = myData.filter((item) => {
                 return item.author.toLowerCase().includes(lowercasedSearchText)
             });
-            console.log(typeof foundItem)
-            if(foundItem)
-            setFilteredBooks(foundItem);
+            if (foundItem)
+                setFilteredBooks(foundItem);
         }
     };
     const showAlert = () => {
@@ -140,7 +139,8 @@ export default SearchDisplay;
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        flexWrap: 'wrap',
+        flexWrap: 'wrap',        
+        backgroundColor: "#78909C"
     },
     inputBox: {
         marginTop: 15,
@@ -155,21 +155,29 @@ const styles = StyleSheet.create({
     button: {
         marginLeft: 10,
         marginBottom: 5,
+        width: 50,
+        height: 50
     },
     controlContainer: {
         display: 'flex',
         flexDirection: 'column',
-        width: "100%",
+        width: "86%",
         justifyContent: 'center',
-        backgroundColor: "#FAFAFA",
-        marginTop: 13,
-        marginLeft: -1,
+        backgroundColor: "#90A4AE",
+        margin: "5%",
+        marginLeft:'6.5%',
+        borderWidth: 1,
+        borderRadius: 20,
     },
     listContainer: {
-        height: 400,
+        borderWidth: 1,
+        borderRadius: 20,
+        height: 210,
         width: "86%",
-        backgroundColor: "#FAFAFA",
-        margin: "5%"
+        backgroundColor: "#B0BEC5",
+        margin: "5%",        
+        marginLeft:'6.5%',
+        overflow: "false",
     },
     txtContainer: {
         display: 'flex',
@@ -179,6 +187,7 @@ const styles = StyleSheet.create({
     },
     btnContainer: {
         flexDirection: 'row',
-        marginLeft: 13
+        marginLeft: 13,
+        marginBottom: 10
     }
 });

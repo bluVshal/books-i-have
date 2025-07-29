@@ -7,11 +7,14 @@
         },
         "titles":{
             "bookTitle":"Book Title",
-            "error":"Error"
+            "error":"Error",
+            "bookEntry":"Book Entry"
         },
         "messages":{
             "emptyTextError":"Enter a text to search",
-            "emptyListError":"No Books In List"
+            "emptyListError":"No Books In List",
+            "bookAlreadyExistsError":"Book Already Exists",
+            "emptyInputTextError":"Enter a text to input"
         }
     }
 }
